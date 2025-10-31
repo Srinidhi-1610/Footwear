@@ -1,0 +1,41 @@
+.hero-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background: #fff;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  color: #b22222;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+.hero-text button {
+  background: #b22222;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background: #8b0000;
+}
+
+.hero-image img {
+  width: 450px;
+  border-radius: 12px;
+}

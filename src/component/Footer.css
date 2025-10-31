@@ -1,0 +1,62 @@
+/* Footer.css */
+
+/* Main footer styling */
+footer {
+  background-color: #860f62;
+  color: #f1f1f1;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Section Headings */
+footer h5 {
+  color: #12f3bf;
+  font-size: 1.2rem;
+  border-left: 4px solid #f39c12;
+  padding-left: 10px;
+}
+
+/* Paragraph text */
+footer p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Quick links list */
+footer ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+}
+
+footer a {
+  color: #f1f1f1;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+footer a:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+/* Divider */
+footer hr {
+  border-color: #57606f;
+  opacity: 0.6;
+}
+
+/* Bottom copyright */
+footer .text-center p {
+  font-size: 0.9rem;
+  color: #dcdde1;
+  margin-top: 10px;
+}
+
+/* Responsive padding */
+@media (max-width: 768px) {
+  footer .row {
+    text-align: center;
+  }
+}

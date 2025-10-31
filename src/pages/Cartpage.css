@@ -1,0 +1,136 @@
+/* === Cart Container === */
+.cart-container {
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-container h1 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #2d3436;
+  text-align: center;
+}
+
+/* === Product Wrapper === */
+.products-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* === Product Card === */
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 22px 25px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #ff5722;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* === Quantity Controls === */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+  gap: 10px;
+}
+
+.quantity-controls button {
+  background: #f5f6fa;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: px;
+  height: px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quantity-controls button:hover {
+  background: #dfe6e9;
+}
+
+/* === Delete Button === */
+.product-card button {
+  background: #e5a61c;
+  border: none;
+  color: #d6b614;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+  font-size: 0.9rem;
+}
+
+.product-card button:hover {
+  background: #e84118;
+}
+/* === Payment Section === */
+.payment-section {
+  margin-top: 40px;
+  text-align: center;
+  padding: 25px;
+  background: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.payment-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #ff9800; /* same orange as your TOTAL */
+  font-weight: bold;
+}
+
+.payment-section button {
+  background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+  border: none;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  margin-top: 10px;
+}
+
+.payment-section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(108, 92, 231, 0.3);
+}

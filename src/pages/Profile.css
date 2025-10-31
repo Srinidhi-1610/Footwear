@@ -1,0 +1,101 @@
+/* Background */
+.profile-bg {
+ background-image: url("D:\Desktop\website\website\src\Images\profile.jpg");  
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Profile Card */
+.profile-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.profile-card h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #222;
+}
+
+.profile-card p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #444;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+  color: white;
+}
+
+.edit {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+.edit:hover {
+  background: linear-gradient(to right, #009688, #7cb342);
+}
+
+.delete {
+  background: linear-gradient(to right, #f85032, #e73827);
+}
+
+.delete:hover {
+  background: linear-gradient(to right, #d92b19, #bf2315);
+}
+
+.logout {
+  background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.logout:hover {
+  background: linear-gradient(to right, #5563c1, #623a8c);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 30px 20px;
+  }
+
+  .profile-card h2 {
+    font-size: 22px;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+}

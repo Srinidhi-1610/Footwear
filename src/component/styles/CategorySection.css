@@ -1,0 +1,22 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 60px;
+}
+
+.category-card {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.category-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.category-card:hover {
+  transform: scale(1.1);
+}

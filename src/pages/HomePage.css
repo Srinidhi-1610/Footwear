@@ -1,0 +1,20 @@
+/* HomePage.css */
+.products-section {
+  padding: 50px 80px;
+  text-align: center;
+  background-color: #fff; /* optional: makes it cleaner */
+}
+
+.products-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #b22222;
+  font-weight: 700;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  justify-items: center; /* center products inside grid cells */
+}

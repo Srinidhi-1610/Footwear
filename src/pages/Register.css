@@ -1,0 +1,134 @@
+/* Background wrapper */
+.register-bg {
+  background-image: url("D:\Desktop\website\website\src\Images\regg.webp");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+/* Card container */
+.register-card {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+}
+
+/* Title */
+.register-card h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Input fields */
+.register-card input[type="text"],
+.register-card input[type="email"],
+.register-card input[type="password"] {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.register-card input:focus {
+  border-color: #00c6ff;
+  box-shadow: 0 0 4px rgba(0, 198, 255, 0.3);
+  outline: none;
+}
+
+/* Checkbox and terms */
+.checkbox-area {
+  display: flex;
+  align-items: flex-start;
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.checkbox-area input {
+  margin-right: 8px;
+  margin-top: 3px;
+}
+
+.checkbox-area a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.checkbox-area a:hover {
+  text-decoration: underline;
+}
+
+/* Gradient Sign Up button */
+.signup-btn {
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.signup-btn:hover {
+  opacity: 0.9;
+}
+
+/* Login link */
+.login-link {
+  text-align: center;
+  font-size: 13px;
+  color: #444;
+  margin-top: 20px;
+}
+
+.login-link a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Feedback message */
+.fw-bold {
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 30px 20px;
+  }
+
+  .register-card h2 {
+    font-size: 20px;
+  }
+
+  .signup-btn {
+    font-size: 15px;
+  }
+}
