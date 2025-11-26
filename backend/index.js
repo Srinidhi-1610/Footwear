@@ -8,7 +8,9 @@ const app = express();
 const port = process.env.PORT || 6011;
 
 // ✅ Stripe secret key (replace with your actual key)
-const stripe = new Stripe("51S8l6m365JZlMhSqQxEdXHxgRXpMwZYxQgW8LxEhlrU2no4I0j0l82hrbxQRHuli63sC3vVkadZC5jC35mt06ZfV00BzsQyBsC");
+require("dotenv").config();
+const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
+//const stripe = new Stripe("51S8l6m365JZlMhSqQxEdXHxgRXpMwZYxQgW8LxEhlrU2no4I0j0l82hrbxQRHuli63sC3vVkadZC5jC35mt06ZfV00BzsQyBsC");
 
 app.use(cors());
 app.use(express.json());
